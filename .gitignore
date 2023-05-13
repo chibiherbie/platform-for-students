@@ -151,3 +151,8 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 .idea/
 /src/node_modules/
+.htaccess
+passenger_wsgi.py
+public
+public_html/
+tmp/

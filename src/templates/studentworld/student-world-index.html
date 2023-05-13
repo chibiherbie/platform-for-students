@@ -1,0 +1,51 @@
+{% extends 'studentworld/base.html' %}
+
+{% block title %}
+    Студ мир - студент
+{% endblock %}
+
+{% block body %}
+    {% load static %}
+
+    <section class="flex text-gray-600 font-[Montserrat] items-center justify-center h-screen ">
+        <div class="container relative mx-auto flex px-5 py-24 md:flex-row flex-col items-center bg-[#0982e5] rounded-3xl ">
+            <div class="relative lg:flex-grow 6 flex flex-col mb-16 md:mb-0 items-center text-center text-white">
+                <p class="mt-16 inline-flex text-white bg-[#ffffff]/30 border-0 py-2 px-6
+                     focus:outline-none rounded text-center text-xs font-body rounded-3xl ">
+                    ОНЛАЙН-ПЛАФТОРМА
+                </p>
+                <h1 class="title-font pt-6 mb-4 font-semibold text-6xl">«Студенческий мир» –
+                    <br class="hidden lg:inline-block">экосистема комфортного обучения
+                </h1>
+                <p class="mt-5 mb-8 text-xl">Удобная онлайн платформа
+                    <br class="hidden lg:inline-block">для студентов
+                </p>
+
+                <div class="flex pb-10">
+                    <a href="{% url 'university:index' %}">
+                        <button class="text-lg mr-8 text-gray-800 bg-[#c3fb4b] border-0 py-2 px-6
+                     focus:outline-none hover:text-gray-600 rounded font-semibold rounded-3xl h-16 text-xl">
+                            Университету
+                        </button>
+                    </a>
+                    <a href="{% url 'student:index' %}">
+                        <button class="text-lg text-gray-800 bg-[#ff6b32] border-0 py-2 px-6
+                     focus:outline-none hover:text-gray-600 rounded font-semibold rounded-3xl h-16 text-xl">
+                            Студенту
+                        </button>
+                    </a>
+                </div>
+            </div>
+            {#            <div class="absolute bottom-25 right-15">#}
+            {#                <div class="bg-[#ffffff] border-0 w-96 h-12 rounded-md ">#}
+            {#                </div>#}
+            {#            </div>#}
+            {#            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">#}
+            {#                <img class="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600">#}
+            {#            </div>#}
+
+        </div>
+    </section>
+
+
+{% endblock %}
