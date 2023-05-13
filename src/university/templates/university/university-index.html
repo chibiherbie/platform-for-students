@@ -1,7 +1,7 @@
 {% extends 'student/base.html' %}
 
 {% block title %}
-    Студ мир - студент
+    index
 {% endblock %}
 
 {% block body %}
@@ -25,16 +25,14 @@
                 <a class="mr-5 hover:text-gray-900 cursor-pointer">Партнёры</a>
                 <a class="mr-5 hover:text-gray-900 cursor-pointer">Контакты</a>
             </nav>
-            <button class="inline-flex text-sm text-white items-center bg-[#818193] border-0 py-1 px-3 focus:outline-none
-             hover:bg-[#777789] rounded-3xl text-base mt-4 mr-2 md:mt-0">
-                Регистрация
-            </button>
-            <a href="{% url 'student:login' %}">
-                <button class="inline-flex text-sm text-white items-center bg-[#2f2f38] border-0 py-1 px-3 focus:outline-none
+{#            <button class="inline-flex text-sm text-white items-center bg-[#818193] border-0 py-1 px-3 focus:outline-none#}
+{#             hover:bg-[#777789] rounded-3xl text-base mt-4 mr-2 md:mt-0">#}
+{#                Оставить заявку#}
+{#            </button>#}
+            <button class="inline-flex text-sm text-white items-center bg-[#2f2f38] border-0 py-1 px-3 focus:outline-none
              hover:bg-[#4d4d5a] rounded-3xl text-base mt-4 md:mt-0">
-                    Вход
-                </button>
-            </a>
+                Оставить заявку
+            </button>
         </div>
     </header>
 
@@ -56,7 +54,7 @@
                 <div class="flex justify-center pb-10">
                     <button class="text-lg text-gray-800 bg-[#c3fb4b] border-0 py-2 px-6
                      focus:outline-none hover:text-gray-600 rounded font-semibold rounded-3xl h-16 text-xl">
-                        Зарегистрироваться
+                        Оставить заявку
                     </button>
                 </div>
             </div>
