@@ -6,3 +6,8 @@ from django.views import View
 class UniversityIndexView(View):
     def get(self, request: HttpRequest) -> HttpResponse:
         return render(request, 'university/university-index.html')
+
+
+class LoginView(View):
+    def get(self, request: HttpRequest) -> HttpResponse:
+        return render(request, 'university/login.html')
