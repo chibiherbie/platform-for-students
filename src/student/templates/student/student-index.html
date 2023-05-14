@@ -50,10 +50,12 @@
                 </p>
 
                 <div class="flex justify-center pb-10">
-                    <button class="text-lg text-gray-800 bg-[#c3fb4b] border-0 py-2 px-6
-                     focus:outline-none hover:text-gray-600 rounded font-semibold rounded-3xl h-16 text-xl">
-                        Зарегистрироваться
-                    </button>
+                    <a href="{% url 'student:login' %}">
+                        <button class="text-lg text-gray-800 bg-[#c3fb4b] border-0 py-2 px-6 focus:outline-none hover:text-gray-600 rounded font-semibold rounded-3xl h-16 text-xl">
+                            Войти
+                        </button>
+                    </a>
+
                 </div>
             </div>
             {#            <div class="absolute bottom-25 right-15">#}
@@ -69,19 +71,20 @@
 
     <section class="text-gray-600 font-[Montserrat]">
         <div class="container px-5 py-24 mx-auto" id="about-us">
-            <div class="flex flex-wrap mb-20">
+            <div class="flex flex-wrap mb-10 ">
                 <div class="lg:w-1/2 w-full mb-5 lg:mb-0">
                     <h1 class=" title-font mb-2 text-[#2f2f38] font-semibold text-6xl">О нас</h1>
                     <div class="h-1 w-20 bg-[#ff6b32] rounded"></div>
                 </div>
             </div>
-            <div class="flex flex-wrap-m-4">
+            <div class="flex flex-wrap-m-4 grid md:grid-cols-3 ">
                 <div class="xl:w-auto md:w-1/2 p-4">
                     <div class="pb-8 rounded-lg shadow-[0_0px_30px_-15px_rgba(0,0,0,0.3)]">
                         <img class="h-60 rounded w-full object-cover object-center mb-6 transform translate-x-2 translate-y-2"
-                             src="https://dummyimage.com/720x400" alt="content">
+                             src="{% static 'student/img/people_watch_pc.jpg' %}" alt="content">
                         {#                        <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>#}
-                        <h2 class="text-2xl text-[#2f2f38] font-medium pl-10 pr-10 pb-4">Наша цель — создавать комфорт в жизни студентов</h2>
+                        <h2 class="text-2xl text-[#2f2f38] font-medium pl-10 pr-10 pb-4">Наша цель — создавать комфорт в
+                            жизни студентов</h2>
                         <p class=" leading-relaxed text-base pl-10 pr-10">С нами вы легко сможете отслеживать
                             свою
                             успеваемость, расписание и многое другое</p>
@@ -89,21 +92,27 @@
                 </div>
                 <div class="xl:w-auto md:w-1/2 p-4">
                     <div class="pb-8 rounded-lg shadow-[0_0px_30px_-15px_rgba(0,0,0,0.3)]">
-                        <img class="h-60 rounded w-full object-cover object-center mb-6 transform translate-x-2 translate-y-2"
-                             src="https://dummyimage.com/720x400" alt="content">
+                        <img class="h-60 rounded w-full bg-no-repeat bg-top object-cover object-center mb-6 transform translate-x-2 translate-y-2"
+                             src="{% static 'student/img/comportable_ui.png' %}" alt="content">
                         {#                        <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>#}
-                        <h2 class="text-2xl text-[#2f2f38] font-medium pl-10 pr-10 pb-4">Мы разрабатываем платформу с удобным интерфейсом</h2>
-                        <p class=" leading-relaxed text-base pl-10 pr-10">Помогает всем участникам образовательного процесса
-                            с легкостью находить нужную информацию<br class="hidden lg:inline-block"> и получать услуги учебного заведения</p>
+                        <h2 class="text-2xl text-[#2f2f38] font-medium pl-10 pr-10 pb-4">Мы разрабатываем платформу с
+                            удобным интерфейсом</h2>
+                        <p class=" leading-relaxed text-base pl-10 pr-10">Помогает всем участникам образовательного
+                            процесса
+                            с легкостью находить нужную информацию<br class="hidden lg:inline-block"> и получать услуги
+                            учебного заведения</p>
                     </div>
                 </div>
                 <div class="xl:w-auto md:w-1/2 p-4">
                     <div class="pb-8 rounded-lg shadow-[0_0px_30px_-15px_rgba(0,0,0,0.3)]">
                         <img class="h-60 rounded w-full object-cover object-center mb-6 transform translate-x-2 translate-y-2"
-                             src="https://dummyimage.com/720x400" alt="content">
+                             src="{% static 'student/img/admin_ui.jpg' %}" alt="content">
                         {#                        <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>#}
-                        <h2 class="text-2xl text-[#2f2f38] font-medium pl-10 pr-10 pb-4">Инструмент решения оперативных задач администрации</h2>
-                        <p class=" leading-relaxed text-base pl-10 pr-10">оперативное информирование участников образовательного процесса,<br class="hidden lg:inline-block"> поддержка образовательного процесса различными онлайн ресурсами<br class="hidden lg:inline-block"> и сервисами и др</p>
+                        <h2 class="text-2xl text-[#2f2f38] font-medium pl-10 pr-10 pb-4">Инструмент решения оперативных
+                            задач администрации</h2>
+                        <p class=" leading-relaxed text-base pl-10 pr-10">оперативное информирование участников
+                            образовательного процесса,<br class="hidden lg:inline-block"> поддержка образовательного
+                            процесса различными онлайн ресурсами<br class="hidden lg:inline-block"> и сервисами и др</p>
                     </div>
                 </div>
             </div>

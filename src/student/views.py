@@ -11,3 +11,8 @@ class StudentIndexView(View):
 class LoginView(View):
     def get(self, request: HttpRequest) -> HttpResponse:
         return render(request, 'student/login.html')
+
+
+class ProfileView(View):
+    def get(self, request: HttpRequest) -> HttpResponse:
+        return render(request, 'student/profile.html')
